@@ -1,0 +1,12 @@
+<target name="checkstyle">
+  <taskdef resource="checkstyletask.properties">
+    <classpath>
+      <pathelement location="lib/checkstyle-10.9.3-all.jar"/>
+    </classpath>
+  </taskdef>
+  <checkstyle config="checkstyle.xml">
+    <fileset dir="${src.dir}">
+      <include name="**/*.java"/>
+    </fileset>
+  </checkstyle>
+</target>
